@@ -1,0 +1,16 @@
+server:
+  port: 8084
+spring:
+  data:
+    solr:
+      host: http://192.168.11.132:8080/solr
+dubbo:
+  application:
+    name: seach_service
+  registry:
+    address: zookeeper://192.168.11.132:2181
+  protocol:
+    port: -1
+    name: dubbo
+  consumer:
+    check: false
